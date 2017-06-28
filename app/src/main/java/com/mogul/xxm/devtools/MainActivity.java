@@ -25,7 +25,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void showNorDialog(){
         MaterialDialog materialDialog = new MaterialDialog(this);
         materialDialog
-                //.setTitle("这个是标题")
+                .setTitle("这个是标题")
+                //.setTitleColor(R.color.colorAccent)
                 .setMessage("消息内容")
                 .setPositiveButton("确认", new View.OnClickListener() {
             @Override

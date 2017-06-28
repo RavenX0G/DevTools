@@ -7,6 +7,8 @@ import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
+import android.support.v4.content.ContextCompat;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -42,6 +44,7 @@ public class MaterialDialog {
     /**标题*/
     private int mTitleResId;
     private CharSequence mTitle;
+    private int mTitleColorResId;
     /**内容消息*/
     private int mMessageResId;
     private CharSequence mMessage;
@@ -144,11 +147,18 @@ public class MaterialDialog {
         return this;
     }
 
-
     public MaterialDialog setTitle(CharSequence title) {
         mTitle = title;
         if (mBuilder != null) {
             mBuilder.setTitle(title);
+        }
+        return this;
+    }
+
+    public MaterialDialog setTitleColor(int colorResId){
+        mTitleColorResId = colorResId;
+        if(mBuilder != null){
+            mBuilder.setTitleColor(colorResId);
         }
         return this;
     }
@@ -309,6 +319,11 @@ public class MaterialDialog {
             if (mTitle != null) {
                 setTitle(mTitle);
             }
+
+            if(mTitleColorResId != 0 ){
+                setTitleColor(mTitleColorResId);
+            }
+
             if (mTitle == null && mTitleResId == 0) {
                 mTitleView.setVisibility(View.GONE);
             }
@@ -390,6 +405,11 @@ public class MaterialDialog {
 
         public void setTitle(CharSequence title) {
             mTitleView.setText(title);
+        }
+
+        public void setTitleColor(int colorResId){
+            Log.d("Test","====== call setTitleColor =======");
+            mTitleView.setTextColor(ContextCompat.getColor(mContext,colorResId));
         }
 
 
