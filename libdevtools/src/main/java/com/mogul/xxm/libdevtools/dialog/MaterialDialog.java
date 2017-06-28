@@ -281,9 +281,13 @@ public class MaterialDialog {
             mAlertDialog = new AlertDialog.Builder(mContext).create();
             mAlertDialog.show();
 
-            mAlertDialog.getWindow()
-                    .clearFlags(WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE |
-                            WindowManager.LayoutParams.FLAG_ALT_FOCUSABLE_IM);
+            if(mAlertDialog.getWindow() != null) {
+
+                mAlertDialog.getWindow()
+                        .clearFlags(WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE |
+                                WindowManager.LayoutParams.FLAG_ALT_FOCUSABLE_IM);
+            }
+
             mAlertDialog.getWindow()
                     .setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_MASK_STATE);
 
