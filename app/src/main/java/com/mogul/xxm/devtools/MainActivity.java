@@ -1,18 +1,23 @@
 package com.mogul.xxm.devtools;
 
+import android.content.Context;
 import android.content.DialogInterface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Toast;
 
 import com.mogul.xxm.libdevtools.dialog.MaterialDialog;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
+    private Context mContext;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        this.mContext = this;
 
     }
 
@@ -30,7 +35,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }).setNegativeButton("取消", new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Toast.makeText(mContext,"取消按钮",Toast.LENGTH_SHORT).show();
             }
         }).setCanceledOnTouchOutside(true)
                 .setOnDismissListener(new DialogInterface.OnDismissListener() {
