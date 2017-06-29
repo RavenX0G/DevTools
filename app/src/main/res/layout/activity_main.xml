@@ -4,13 +4,127 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.mogul.xxm.devtools.MainActivity">
 
-    <Button
-        android:id="@+id/button_1"
-        android:onClick="onClick"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="正常对话框"/>
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button_1"
+                android:onClick="onClick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="正常对话框"/>
+
+            <Button
+                android:id="@+id/button_2"
+                android:onClick="onClick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="列表对话框"/>
+
+            <Button
+                android:id="@+id/button_3"
+                android:onClick="onClick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="showDialogTie"/>
+
+            <Button
+                android:id="@+id/button_4"
+                android:onClick="onClick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="showLoadingHorizontalDialog"
+                android:tag="Horizontal"/>
+
+            <Button
+                android:id="@+id/button_5"
+                android:onClick="onClick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="Vertical"
+                android:text="showLoadingVerticalDialog"/>
+
+            <Button
+                android:id="@+id/button_6"
+                android:onClick="onClick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="MdLoadingVertical"
+                android:text="MdLoadingVertical"/>
+
+            <Button
+                android:id="@+id/button_7"
+                android:onClick="onClick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MdAlert"/>
+
+            <Button
+                android:id="@+id/button_8"
+                android:onClick="onClick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MdMultiChoose"/>
+
+            <Button
+                android:id="@+id/button_9"
+                android:onClick="onClick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SingleChoose"/>
+
+            <Button
+                android:id="@+id/button_10"
+                android:onClick="onClick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="Alert1"
+                android:text="Alert1"/>
+
+            <Button
+                android:id="@+id/button_11"
+                android:onClick="onClick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CenterSheet"/>
+
+            <Button
+                android:id="@+id/button_12"
+                android:onClick="onClick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MDBottomSheet1"/>
+
+            <Button
+                android:id="@+id/button_13"
+                android:onClick="onClick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MDBottomSheet2"/>
+
+            <Button
+                android:id="@+id/button_14"
+                android:onClick="onClick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="showToast"/>
+
+            <Button
+                android:id="@+id/button_15"
+                android:onClick="onClick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="showCustomAlert"/>
+
+        </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>
