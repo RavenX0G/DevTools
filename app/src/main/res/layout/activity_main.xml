@@ -124,6 +124,13 @@
                 android:layout_height="wrap_content"
                 android:text="showCustomAlert"/>
 
+            <Button
+                android:id="@+id/button_16"
+                android:onClick="onClick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TimerPick1"/>
+
         </LinearLayout>
     </ScrollView>
 
