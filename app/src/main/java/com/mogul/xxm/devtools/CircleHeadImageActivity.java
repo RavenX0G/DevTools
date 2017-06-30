@@ -14,7 +14,11 @@ public class CircleHeadImageActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_circle_head_image);
+
+
+        normalCircle = (CircleImageView) findViewById(R.id.normal_circle_view);
         netCircle = (CircleImageView) findViewById(R.id.net_circle_view);
+        normalCircle.setNetImageByGlid(this,"http://up.qqjia.com/z/01/tu3945_9.jpg",R.mipmap.test01);
         netCircle.setNetImage("http://up.qqjia.com/z/01/tu3945_9.jpg",R.mipmap.test03);
     }
 }

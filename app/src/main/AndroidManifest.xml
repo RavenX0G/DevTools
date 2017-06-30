@@ -39,7 +39,11 @@
         <activity android:name=".refreshview.SmileViewActivity" />
         <activity android:name=".WebViewActivity" />
         <activity android:name=".refreshview.HeadAdActivity" />
-        <activity android:name=".CircleHeadImageActivity"></activity>
+        <activity android:name=".CircleHeadImageActivity" />
+        <activity android:name=".RollViewPageActivity" />
+        <activity android:name=".rollviewpage.SimpleActivity" />
+        <activity android:name=".rollviewpage.LoopActivity" />
+        <activity android:name=".rollviewpage.NetImageActivity"></activity>
     </application>
 
 </manifest>

@@ -19,8 +19,10 @@ import android.support.annotation.ColorInt;
 import android.support.annotation.ColorRes;
 import android.support.annotation.DrawableRes;
 import android.util.AttributeSet;
+import android.view.ViewGroup;
 import android.widget.ImageView;
 
+import com.bumptech.glide.Glide;
 import com.mogul.xxm.libdevtools.R;
 
 /**
@@ -445,5 +447,15 @@ public class CircleImageView extends ImageView {
             setImageResource(defaultResId);
             initializeBitmap();
         }
+    }
+
+    public void setNetImageByGlid(Context context,String url, int defaultResId){
+//        setScaleType(ImageView.ScaleType.CENTER_CROP);
+//        setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
+        Glide.with(context)
+                .load(url)
+                .placeholder(defaultResId)
+                .into(this);
+        initializeBitmap();
     }
 }

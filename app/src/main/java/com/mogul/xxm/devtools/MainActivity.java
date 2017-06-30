@@ -38,7 +38,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.button_4:
                 toActivity(CircleHeadImageActivity.class);
                 break;
-
+            case R.id.button_5:
+                toActivity(RollViewPageActivity.class);
+                break;
         }
     }
 
