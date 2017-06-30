@@ -10,26 +10,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.view.ViewGroup;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.ImageView;
-import android.widget.ListView;
-import android.widget.Toast;
-
-import com.mogul.xxm.devtools.refreshview.BannerRecyclerViewActivity;
-import com.mogul.xxm.libdevtools.dialog.BuildBean;
-import com.mogul.xxm.libdevtools.dialog.DialogUIUtils;
-import com.mogul.xxm.libdevtools.dialog.MaterialDialog;
-import com.mogul.xxm.libdevtools.dialog.TieBean;
-import com.mogul.xxm.libdevtools.dialog.listener.DialogUIItemListener;
-import com.mogul.xxm.libdevtools.dialog.listener.DialogUIListener;
-import com.mogul.xxm.libdevtools.pickerview.TimePickerDialog;
-import com.mogul.xxm.libdevtools.pickerview.data.Type;
-import com.mogul.xxm.libdevtools.pickerview.listener.OnDateSetListener;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
@@ -56,7 +36,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 toActivity(RefreshViewActivity.class);
                 break;
             case R.id.button_4:
-               // toActivity(BannerRecyclerViewActivity.class);
+                toActivity(CircleHeadImageActivity.class);
                 break;
 
         }

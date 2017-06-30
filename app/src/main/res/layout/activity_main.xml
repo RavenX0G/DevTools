@@ -41,8 +41,7 @@
                 android:onClick="onClick"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="待开发"
-                android:tag="Horizontal"/>
+                android:text="圆形头像" />
 
         </LinearLayout>
     </ScrollView>
