@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mogul.xxm.devtools.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="RecyclerView"
+                android:textSize="16sp"
+                android:padding="10dp"
+                android:gravity="center_horizontal"/>
+
+            <Button
+                android:id="@+id/button_1"
+                android:onClick="onClick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="linear样式的RecyclerView"/>
+
+            <Button
+                android:id="@+id/button_2"
+                android:onClick="onClick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="grid样式的RecyclerView"/>
+
+            <Button
+                android:id="@+id/button_3"
+                android:onClick="onClick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Staggered样式的RecyclerView"/>
+
+            <Button
+                android:id="@+id/button_4"
+                android:onClick="onClick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="带Banner的RecyclerView" />
+
+            <Button
+                android:id="@+id/button_5"
+                android:onClick="onClick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="多种布局的RecyclerView" />
+
+            <Button
+                android:id="@+id/button_6"
+                android:onClick="onClick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="静默加载的RecyclerView" />
+
+            <Button
+                android:id="@+id/button_7"
+                android:onClick="onClick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="不使用BaseRecyclerAdapter" />
+
+            <Button
+                android:id="@+id/button_8"
+                android:onClick="onClick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="没有更多数据时显示footerview" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="其他的"
+                android:textSize="16sp"
+                android:padding="10dp"
+                android:gravity="center_horizontal"/>
+
+            <Button
+                android:id="@+id/button_9"
+                android:onClick="onClick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ListView" />
+
+            <Button
+                android:id="@+id/button_10"
+                android:onClick="onClick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="GridView" />
+
+            <Button
+                android:id="@+id/button_11"
+                android:onClick="onClick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="自定义View" />
+
+            <Button
+                android:id="@+id/button_12"
+                android:onClick="onClick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ScrollView" />
+
+            <Button
+                android:id="@+id/button_13"
+                android:onClick="onClick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="使用空布局" />
+
+            <Button
+                android:id="@+id/button_14"
+                android:onClick="onClick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="数据不满一屏" />
+
+            <Button
+                android:id="@+id/button_15"
+                android:onClick="onClick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="数据少时不显示加载更多" />
+
+            <Button
+                android:id="@+id/button_16"
+                android:onClick="onClick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="笑脸刷新" />
+
+            <Button
+                android:id="@+id/button_17"
+                android:onClick="onClick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="WebView" />
+
+            <Button
+                android:id="@+id/button_18"
+                android:onClick="onClick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="头部广告位" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

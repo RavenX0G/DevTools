@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.mogul.xxm.devtools">
-
+    <uses-permission android:name="android.permission.INTERNET" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -16,6 +16,27 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".DialogActivity" />
+        <activity android:name=".TimePickerActivity" />
+        <activity android:name=".RefreshViewActivity" />
+        <activity android:name=".refreshview.LinearRecyclerViewActivity" />
+        <activity android:name=".refreshview.GridRecyclerViewActivity" />
+        <activity android:name=".refreshview.StaggeredRecyclerViewActivity" />
+        <activity android:name=".refreshview.BannerRecyclerViewActivity" />
+        <activity android:name=".refreshview.MultiItemRecyclerViewActivity" />
+        <activity android:name=".refreshview.SilenceRecyclerViewActivity" />
+        <activity android:name=".refreshview.WithoutBaseAdapterRecyclerViewActivity" />
+        <activity android:name=".refreshview.ShowFooterWhenNoMoreDataRecyclerViewActivity" />
+        <activity android:name=".refreshview.ListViewActivity" />
+        <activity android:name=".refreshview.GridViewActivity" />
+        <activity android:name=".refreshview.CustomViewActivity" />
+        <activity android:name=".refreshview.ScrollViewActivity" />
+        <activity android:name=".refreshview.EmptyViewActivity" />
+        <activity android:name=".refreshview.NotFullScreenActivity" />
+        <activity android:name=".refreshview.NotFullScreenWithoutFooterActivity" />
+        <activity android:name=".refreshview.SmileViewActivity" />
+        <activity android:name=".WebViewActivity" />
+        <activity android:name=".refreshview.HeadAdActivity"></activity>
     </application>
 
 </manifest>
