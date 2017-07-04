@@ -22,3 +22,13 @@ https://github.com/huxq17/XRefreshView
 
 From:
 https://github.com/LuckyJayce/ViewPagerIndicator
+
+
+五、小红点提示
+
+https://github.com/jgilfelt/android-viewbadger
+
+
+六、带箭头的入口控件
+
+七、数量增减控件

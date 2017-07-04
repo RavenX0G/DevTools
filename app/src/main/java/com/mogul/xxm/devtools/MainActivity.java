@@ -44,6 +44,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.button_6:
                 toActivity(ViewPagerIndicatorActivity.class);
                 break;
+            case R.id.button_7:
+                toActivity(RightArrowBtnActivity.class);
+                break;
+            case R.id.button_8:
+                toActivity(BadgeViewActivity.class);
+                break;
         }
     }
 

@@ -57,6 +57,20 @@
                 android:layout_height="wrap_content"
                 android:text="ViewPagerIndicator" />
 
+            <Button
+                android:id="@+id/button_7"
+                android:onClick="onClick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="RightArrowButton" />
+
+            <Button
+                android:id="@+id/button_8"
+                android:onClick="onClick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="小红点" />
+
         </LinearLayout>
     </ScrollView>
 

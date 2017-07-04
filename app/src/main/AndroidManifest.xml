@@ -53,7 +53,9 @@
         <activity android:name=".viewpagerindicator.MoreTab2Activity" />
         <activity android:name=".viewpagerindicator.SpringActivity" />
         <activity android:name=".viewpagerindicator.SingleTabActivity" />
-        <activity android:name=".viewpagerindicator.TabMainActivity"></activity>
+        <activity android:name=".viewpagerindicator.TabMainActivity" />
+        <activity android:name=".RightArrowBtnActivity" />
+        <activity android:name=".BadgeViewActivity"></activity>
     </application>
 
 </manifest>

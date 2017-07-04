@@ -164,4 +164,32 @@
         <attr name="rollviewpager_hint_color" format="color" />
         <attr name="rollviewpager_hint_alpha" format="integer" />
     </declare-styleable>
+
+
+    <!--自定义的右指向箭头View属性-->
+    <attr name="rightArrowText" format="string" />
+    <attr name="rightArrowTextColor" format="color" />
+    <attr name="rightArrowTextSize" format="dimension" />
+    <attr name="rightArrowSrc" format="reference" />
+    <attr name="leftImageSrc" format="reference" />
+    <attr name="divideLineColor" format="color" />
+
+    <!-- 右侧Text属性 -->
+    <attr name="rightArrowRightText" format="string" />
+    <attr name="rightArrowRightTextColor" format="color" />
+    <attr name="rightArrowRightTextSize" format="dimension" />
+
+    <declare-styleable name="RightArrowButton">
+        <attr name="rightArrowText" />
+        <attr name="rightArrowTextColor" />
+        <attr name="rightArrowTextSize" />
+        <attr name="rightArrowSrc"/>
+        <attr name="leftImageSrc"/>
+        <attr name="divideLineColor"/>
+
+        <attr name="rightArrowRightText" />
+        <attr name="rightArrowRightTextColor"/>
+        <attr name="rightArrowRightTextSize"/>
+
+    </declare-styleable>
 </resources>
