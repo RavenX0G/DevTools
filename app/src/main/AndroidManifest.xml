@@ -43,7 +43,17 @@
         <activity android:name=".RollViewPageActivity" />
         <activity android:name=".rollviewpage.SimpleActivity" />
         <activity android:name=".rollviewpage.LoopActivity" />
-        <activity android:name=".rollviewpage.NetImageActivity"></activity>
+        <activity android:name=".rollviewpage.NetImageActivity" />
+        <activity
+            android:name=".viewpagerindicator.GuideActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity android:name=".ViewPagerIndicatorActivity" />
+        <activity android:name=".viewpagerindicator.BannerActivity" />
+        <activity android:name=".viewpagerindicator.MoreTab1Activity" />
+        <activity android:name=".viewpagerindicator.MoreTab2Activity" />
+        <activity android:name=".viewpagerindicator.SpringActivity" />
+        <activity android:name=".viewpagerindicator.SingleTabActivity" />
+        <activity android:name=".viewpagerindicator.TabMainActivity"></activity>
     </application>
 
 </manifest>

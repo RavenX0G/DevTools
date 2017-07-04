@@ -17,3 +17,8 @@ https://github.com/JZXiang/TimePickerDialog
 
 From:
 https://github.com/huxq17/XRefreshView
+
+四、ViewPagerIndicator
+
+From:
+https://github.com/LuckyJayce/ViewPagerIndicator

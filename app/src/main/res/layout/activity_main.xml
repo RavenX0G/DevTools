@@ -50,6 +50,13 @@
                 android:layout_height="wrap_content"
                 android:text="轮播图" />
 
+            <Button
+                android:id="@+id/button_6"
+                android:onClick="onClick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ViewPagerIndicator" />
+
         </LinearLayout>
     </ScrollView>
 

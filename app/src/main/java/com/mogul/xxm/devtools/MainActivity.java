@@ -41,6 +41,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.button_5:
                 toActivity(RollViewPageActivity.class);
                 break;
+            case R.id.button_6:
+                toActivity(ViewPagerIndicatorActivity.class);
+                break;
         }
     }
 
