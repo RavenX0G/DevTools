@@ -12,7 +12,7 @@ import android.widget.FrameLayout;
 
 import com.mogul.xxm.libdevtools.refreshview.XRefreshView;
 import com.mogul.xxm.libdevtools.refreshview.callback.IFooterCallBack;
-import com.mogul.xxm.libdevtools.refreshview.utils.LogUtils;
+import com.mogul.xxm.libdevtools.refreshview.utils.LogRUtils;
 import com.mogul.xxm.libdevtools.refreshview.utils.Utils;
 
 import java.util.Collections;
@@ -62,7 +62,7 @@ public abstract class BaseRecyclerAdapter<VH extends RecyclerView.ViewHolder> ex
     private boolean removeFooter = false;
 
     public void addFooterView() {
-        LogUtils.d("test addFooterView");
+        LogRUtils.d("test addFooterView");
         if (removeFooter) {
             notifyItemInserted(getItemCount());
             removeFooter = false;
@@ -75,7 +75,7 @@ public abstract class BaseRecyclerAdapter<VH extends RecyclerView.ViewHolder> ex
     }
 
     public void removeFooterView() {
-        LogUtils.d("test removeFooterView");
+        LogRUtils.d("test removeFooterView");
         if (!removeFooter) {
             notifyItemRemoved(getItemCount() - 1);
             removeFooter = true;

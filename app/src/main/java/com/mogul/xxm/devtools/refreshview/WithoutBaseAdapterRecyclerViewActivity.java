@@ -12,7 +12,7 @@ import android.view.MenuItem;
 import com.mogul.xxm.devtools.R;
 import com.mogul.xxm.devtools.refreshview.adapter.NormalRecyclerAdapter;
 import com.mogul.xxm.libdevtools.refreshview.XRefreshView;
-import com.mogul.xxm.libdevtools.refreshview.utils.LogUtils;
+import com.mogul.xxm.libdevtools.refreshview.utils.LogRUtils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -64,13 +64,13 @@ public class WithoutBaseAdapterRecyclerViewActivity extends AppCompatActivity {
             @Override
             public void onScrollStateChanged(RecyclerView recyclerView, int newState) {
                 super.onScrollStateChanged(recyclerView, newState);
-                LogUtils.e("onScrollStateChanged");
+                LogRUtils.e("onScrollStateChanged");
             }
 
             @Override
             public void onScrolled(RecyclerView recyclerView, int dx, int dy) {
                 super.onScrolled(recyclerView, dx, dy);
-                LogUtils.e("onScrolled");
+                LogRUtils.e("onScrolled");
             }
         });
 

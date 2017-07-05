@@ -14,7 +14,7 @@ import com.mogul.xxm.devtools.R;
 import com.mogul.xxm.devtools.refreshview.adapter.SimpleAdapter;
 import com.mogul.xxm.libdevtools.refreshview.XRefreshView;
 import com.mogul.xxm.libdevtools.refreshview.XRefreshViewFooter;
-import com.mogul.xxm.libdevtools.refreshview.utils.LogUtils;
+import com.mogul.xxm.libdevtools.refreshview.utils.LogRUtils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -74,14 +74,14 @@ public class NotFullScreenActivity extends AppCompatActivity {
 
             @Override
             public void onLoadMore(boolean isSilence) {
-                LogUtils.e("loadmore");
+                LogRUtils.e("loadmore");
                 new Handler().postDelayed(new Runnable() {
                     public void run() {
                         for (int i = 0; i < 1; i++) {
                             adapter.insert(new Person("More ", mLoadCount + "21"),
                                     adapter.getAdapterItemCount());
                         }
-                        LogUtils.i("test onLoadMore recyclerviewAdapter.count=" + adapter.getItemCount());
+                        LogRUtils.i("test onLoadMore recyclerviewAdapter.count=" + adapter.getItemCount());
                         mLoadCount++;
 
                         if (mLoadCount >= 5) {

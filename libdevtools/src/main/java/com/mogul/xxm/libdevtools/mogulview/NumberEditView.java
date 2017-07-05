@@ -113,9 +113,9 @@ public class NumberEditView extends LinearLayout {
                 }
 
                 if(s.length()>1 && s.charAt(0)=='0'){
-                    LogUtils.d("Test","s -===" +s);
+                    LogRUtils.d("Test","s -===" +s);
                     String s1 = (s.toString()).substring(1,s.length());
-                    LogUtils.d("Test","s1 -===" +s1);
+                    LogRUtils.d("Test","s1 -===" +s1);
                     editText.setText(s1) ;
                     try {
                         value = Integer.parseInt(s1.toString());

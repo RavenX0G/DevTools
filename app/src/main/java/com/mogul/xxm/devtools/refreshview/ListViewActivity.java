@@ -10,7 +10,7 @@ import android.widget.ListView;
 import com.mogul.xxm.devtools.R;
 import com.mogul.xxm.libdevtools.dialog.DialogUIUtils;
 import com.mogul.xxm.libdevtools.refreshview.XRefreshView;
-import com.mogul.xxm.libdevtools.refreshview.utils.LogUtils;
+import com.mogul.xxm.libdevtools.refreshview.utils.LogRUtils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -91,13 +91,13 @@ public class ListViewActivity extends AppCompatActivity {
 
             @Override
             public void onScrollStateChanged(AbsListView view, int scrollState) {
-                LogUtils.i("onScrollStateChanged");
+                LogRUtils.i("onScrollStateChanged");
             }
 
             @Override
             public void onScroll(AbsListView view, int firstVisibleItem,
                                  int visibleItemCount, int totalItemCount) {
-                LogUtils.i("onScroll");
+                LogRUtils.i("onScroll");
             }
         });
     }

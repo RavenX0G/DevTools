@@ -8,7 +8,7 @@ import android.webkit.WebViewClient;
 
 import com.mogul.xxm.devtools.refreshview.ui.raindrop.CustomerFooter;
 import com.mogul.xxm.libdevtools.refreshview.XRefreshView;
-import com.mogul.xxm.libdevtools.refreshview.utils.LogUtils;
+import com.mogul.xxm.libdevtools.refreshview.utils.LogRUtils;
 
 public class WebViewActivity extends AppCompatActivity {
 
@@ -33,7 +33,7 @@ public class WebViewActivity extends AppCompatActivity {
             @Override
             public void onScaleChanged(WebView view, float oldScale, float newScale) {
                 super.onScaleChanged(view, oldScale, newScale);
-                LogUtils.e("oldScale="+oldScale+";newScale="+newScale);
+                LogRUtils.e("oldScale="+oldScale+";newScale="+newScale);
             }
 
             @Override

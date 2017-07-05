@@ -18,7 +18,7 @@ import com.mogul.xxm.libdevtools.refreshview.listener.OnBottomLoadMoreTime;
 import com.mogul.xxm.libdevtools.refreshview.listener.OnTopRefreshTime;
 import com.mogul.xxm.libdevtools.refreshview.recyclerview.BaseRecyclerAdapter;
 import com.mogul.xxm.libdevtools.refreshview.recyclerview.XSpanSizeLookup;
-import com.mogul.xxm.libdevtools.refreshview.utils.LogUtils;
+import com.mogul.xxm.libdevtools.refreshview.utils.LogRUtils;
 import com.mogul.xxm.libdevtools.refreshview.utils.Utils;
 import com.mogul.xxm.libdevtools.refreshview.view.XWebView;
 
@@ -156,7 +156,7 @@ public class XRefreshContentView implements OnScrollListener, OnTopRefreshTime, 
         RecyclerView.LayoutManager layoutManager = recyclerView.getLayoutManager();
         getRecyclerViewInfo(layoutManager);
         refreshAdapter(adapter, layoutManager);
-        LogUtils.d("test pre onScrolled mIsLoadingMore=" + mIsLoadingMore);
+        LogRUtils.d("test pre onScrolled mIsLoadingMore=" + mIsLoadingMore);
         if (onRecyclerViewTop()) {
             if (Utils.isRecyclerViewFullscreen(recyclerView)) {
 //                        addFooterView(true);
@@ -219,7 +219,7 @@ public class XRefreshContentView implements OnScrollListener, OnTopRefreshTime, 
             if (recyclerView.getAdapter() instanceof BaseRecyclerAdapter) {
                 mRecyclerApdater = getRecyclerApdater(recyclerView);
             } else {
-                LogUtils.w(RECYCLERVIEW_ADAPTER_WARIN);
+                LogRUtils.w(RECYCLERVIEW_ADAPTER_WARIN);
             }
         }
         recyclerView.removeOnScrollListener(mOnScrollListener);
@@ -445,7 +445,7 @@ public class XRefreshContentView implements OnScrollListener, OnTopRefreshTime, 
             if (adapter instanceof BaseRecyclerAdapter) {
                 return (BaseRecyclerAdapter) adapter;
             } else {
-                LogUtils.w(RECYCLERVIEW_ADAPTER_WARIN);
+                LogRUtils.w(RECYCLERVIEW_ADAPTER_WARIN);
             }
         }
         return null;

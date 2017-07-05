@@ -10,7 +10,7 @@ import android.widget.ProgressBar;
 
 import com.mogul.xxm.devtools.R;
 import com.mogul.xxm.libdevtools.refreshview.callback.IHeaderCallBack;
-import com.mogul.xxm.libdevtools.refreshview.utils.LogUtils;
+import com.mogul.xxm.libdevtools.refreshview.utils.LogRUtils;
 import com.mogul.xxm.libdevtools.utils.DensityUtil;
 import com.mogul.xxm.libdevtools.utils.Utils;
 
@@ -93,7 +93,7 @@ public class RainDropHeader extends FrameLayout implements IHeaderCallBack {
 //            throw new IllegalArgumentException("pullOffset should between 0 and 1!"+mState+" "+height);
             return;
         }
-        LogUtils.i( "pullOffset:" + pullOffset+";height="+height+";offsetY="+offsetY+";deltaY="+deltaY+";stretchHeight="+stretchHeight+";readyHeight="+readyHeight);
+        LogRUtils.i( "pullOffset:" + pullOffset+";height="+height+";offsetY="+offsetY+";deltaY="+deltaY+";stretchHeight="+stretchHeight+";readyHeight="+readyHeight);
         mRainDropView.updateComleteState(pullOffset);
     }
     public void setVisiableHeight(int height) {
@@ -124,7 +124,7 @@ public class RainDropHeader extends FrameLayout implements IHeaderCallBack {
 //        stretchHeight =  mRainDropView.getMeasuredHeight();
 //        DISTANCE_BETWEEN_STRETCH_READY = DensityUtil.dip2px(getContext(), DISTANCE_BETWEEN_STRETCH_READY);
 //        readyHeight = stretchHeight + DISTANCE_BETWEEN_STRETCH_READY;
-//        LogUtils.i("getHeaderHeight="+mRainDropView.getMeasuredHeight());
+//        LogRUtils.i("getHeaderHeight="+mRainDropView.getMeasuredHeight());
         return mContainer.getHeight();
     }
 }
