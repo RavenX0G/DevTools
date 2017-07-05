@@ -88,4 +88,33 @@ public class RightArrowButton extends LinearLayout {
         this.setClickable(true);
         this.setFocusable(true);
     }
+
+    public void setMajorText(CharSequence str){
+        mNameText.setText(str);
+    }
+
+    public void hideRightArrow(){
+        //mRightArrow.setVisibility(show?INVISIBLE:VISIBLE);
+        mRightArrow.setImageResource(android.R.color.transparent);
+    }
+
+    public void showRightArrow(){
+        //mRightArrow.setVisibility(show?INVISIBLE:VISIBLE);
+        mRightArrow.setImageResource(R.mipmap.arrow_right);
+    }
+
+    public void setRightText(String str){
+        //Log.d("set","setAssistText:"+str);
+        if (str.equals("")){
+            mRightText.setVisibility(View.GONE);
+        } else {
+            mRightText.setVisibility(View.VISIBLE);
+            mRightText.setText(str);
+        }
+        //Log.d("get","getAssistText:"+mRightText.getText());
+    }
+
+    public CharSequence getRightText(){
+        return mRightText.getText();
+    }
 }
