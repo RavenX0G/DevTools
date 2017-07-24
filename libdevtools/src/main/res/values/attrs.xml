@@ -192,4 +192,34 @@
         <attr name="rightArrowRightTextSize"/>
 
     </declare-styleable>
+
+
+
+    <!--inputTextView-->
+    <attr name="nameText" format="string" />
+    <attr name="nameTextColor" format="color" />
+    <attr name="nameTextSize" format="dimension" />
+    <!--
+    <attr name="leftImageSrc" format="reference" />
+     <attr name="divideLineColor" format="color" />
+    -->
+    <attr name="meditText" format="string" />
+    <attr name="meditTextColor" format="color" />
+    <attr name="meditTextSize" format="dimension" />
+    <attr name="meditTextHint" format="string" />
+    <attr name="meditTextHintColor" format="color" />
+    <declare-styleable name="InputTextView">
+        <attr name="nameText" />
+        <attr name="nameTextColor" />
+        <attr name="nameTextSize" />
+        <attr name="leftImageSrc"/>
+        <attr name="divideLineColor"/>
+
+        <attr name="meditText" />
+        <attr name="meditTextColor"/>
+        <attr name="meditTextSize"/>
+        <attr name="meditTextHint" />
+        <attr name="meditTextHintColor"/>
+
+    </declare-styleable>
 </resources>
