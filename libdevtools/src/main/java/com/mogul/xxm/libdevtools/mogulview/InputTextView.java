@@ -85,6 +85,10 @@ public class InputTextView extends LinearLayout{
         this.setFocusable(true);
     }
 
+    public void setInputType(int type){
+        mEditText.setInputType(type);
+    }
+
     public void setNameText(CharSequence str){
         mNameText.setText(str);
     }
