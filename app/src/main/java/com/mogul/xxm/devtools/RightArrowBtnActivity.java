@@ -8,6 +8,7 @@ import android.widget.Toast;
 import com.mogul.xxm.libdevtools.dialog.DialogUIUtils;
 import com.mogul.xxm.libdevtools.dialog.utils.ToolUtils;
 import com.mogul.xxm.libdevtools.mogulview.BadgeView;
+import com.mogul.xxm.libdevtools.mogulview.InputTextView;
 import com.mogul.xxm.libdevtools.mogulview.NumberEditView;
 import com.mogul.xxm.libdevtools.mogulview.RightArrowButton;
 
@@ -15,6 +16,7 @@ public class RightArrowBtnActivity extends AppCompatActivity implements View.OnC
 
     private RightArrowButton rBtn;
     private NumberEditView numberEditView;
+    private InputTextView inputTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +24,7 @@ public class RightArrowBtnActivity extends AppCompatActivity implements View.OnC
         setContentView(R.layout.activity_right_arrow_btn);
         DialogUIUtils.init(this);
         numberEditView = (NumberEditView) findViewById(R.id.number_edit);
+        inputTextView = (InputTextView) findViewById(R.id.input_text_view);
         numberEditView.setOnNumChangerListener(new NumberEditView.OnNumChangeListener() {
             @Override
             public void onNumChange(int num) {
@@ -37,6 +40,7 @@ public class RightArrowBtnActivity extends AppCompatActivity implements View.OnC
 //        BadgeView badgeView = new BadgeView(this,numberEditView);
 //        badgeView.setText("1");
 //        badgeView.show();
+        inputTextView.setEditEnable(false);
     }
 
     @Override

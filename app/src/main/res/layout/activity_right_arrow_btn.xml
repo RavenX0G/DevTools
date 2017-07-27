@@ -28,6 +28,7 @@
         android:layout_marginLeft="20dp" />
 
     <com.mogul.xxm.libdevtools.mogulview.InputTextView
+        android:id="@+id/input_text_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:nameText="哈哈">

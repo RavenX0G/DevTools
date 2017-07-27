@@ -58,6 +58,13 @@
             android:visibility="visible"
             android:background="#00ffffff"/>
 
+        <ImageButton
+            android:id="@+id/clear_btn"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@mipmap/ic_input_text_delete"
+            android:background="@android:color/transparent"/>
+
     </LinearLayout>
 
     <TextView

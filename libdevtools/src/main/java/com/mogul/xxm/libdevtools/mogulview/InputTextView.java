@@ -3,10 +3,12 @@ package com.mogul.xxm.libdevtools.mogulview;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.support.annotation.Nullable;
+import android.text.TextWatcher;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -26,6 +28,7 @@ public class InputTextView extends LinearLayout{
     private TextView mNameText;
     private EditText mEditText;
     private TextView mDivideLine;
+    private ImageButton mClearBtn;
     private TypedArray typedArray;
 
     public InputTextView(Context context) {
@@ -41,6 +44,7 @@ public class InputTextView extends LinearLayout{
         mNameText = (TextView)v.findViewById(R.id.name_text);
         mEditText = (EditText)v.findViewById(R.id.edit_text);
         mDivideLine = (TextView)v.findViewById(R.id.divide_line);
+        mClearBtn = (ImageButton)v.findViewById(R.id.clear_btn);
         typedArray = mContext.obtainStyledAttributes(attrs, R.styleable.InputTextView);
         int N = typedArray.getIndexCount();
         for (int i = 0; i < N; i++) {
@@ -83,6 +87,27 @@ public class InputTextView extends LinearLayout{
         typedArray.recycle();
         this.setClickable(true);
         this.setFocusable(true);
+        mClearBtn.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                setEditText("");
+            }
+        });
+    }
+
+    public void setEditEnable(boolean b){
+        mEditText.setFocusable(b);
+        mEditText.setFocusableInTouchMode(b);
+        if(b){
+            mClearBtn.setVisibility(VISIBLE);
+
+        }else{
+            mClearBtn.setVisibility(GONE);
+        }
+    }
+
+    public void setTextWatcher(TextWatcher textWatcher){
+        mEditText.addTextChangedListener(textWatcher);
     }
 
     public void setInputType(int type){
