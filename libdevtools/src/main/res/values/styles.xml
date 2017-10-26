@@ -11,16 +11,16 @@
     </style>
 
 
-    <style name="dialogui_bottom_style" parent="android:Animation">
-        <item name="@android:windowEnterAnimation">@anim/dialogui_enter</item>
-        //进入时的动画
-        <item name="@android:windowExitAnimation">@anim/dialogui_exit</item>
-        //退出时的动画
-    </style>
+    <!--<style name="dialogui_bottom_style" parent="android:Animation">-->
+        <!--<item name="@android:windowEnterAnimation">@anim/dialogui_enter</item>-->
+        <!--//进入时的动画-->
+        <!--<item name="@android:windowExitAnimation">@anim/dialogui_exit</item>-->
+        <!--//退出时的动画-->
+    <!--</style>-->
 
-    <style name="dialogui_center_style" parent="android:Animation">
-        <item name="@android:windowEnterAnimation">@anim/dialogui_enter_center</item>
-    </style>
+    <!--<style name="dialogui_center_style" parent="android:Animation">-->
+        <!--<item name="@android:windowEnterAnimation">@anim/dialogui_enter_center</item>-->
+    <!--</style>-->
 
 
     <!-- 自定义Dialog在初始化时的样式 -->
@@ -80,9 +80,9 @@
         <item name="android:windowExitAnimation">@anim/date_dialog_ui_exit</item>
     </style>
 
-    <style name="AlertTheme" parent="Base.Theme.AppCompat">
-        <item name="alertStyle" >@style/AlertStyle</item>
-    </style>
+    <!--<style name="AlertTheme" parent="Base.Theme.AppCompat">-->
+        <!--<item name="alertStyle" >@style/AlertStyle</item>-->
+    <!--</style>-->
 
     <!--Alerter-->
     <style name="AlertStyle" parent="@android:style/Widget">
