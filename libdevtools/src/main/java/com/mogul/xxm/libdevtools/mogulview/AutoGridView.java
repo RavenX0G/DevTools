@@ -11,6 +11,10 @@ import android.widget.GridView;
 
 public class AutoGridView extends GridView {
 
+    //嵌套在ScrollView中全展开，重写onMeasure导致adapter的getView方法反复执行
+    //设置一个boolean变量，onMeasure时设为ture，onLayout时设为false
+    public boolean isOnMeasure ;
+
     public AutoGridView(Context context) {
         super(context);
     }
@@ -25,8 +29,15 @@ public class AutoGridView extends GridView {
 
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
+        isOnMeasure = true;
         int expandSpec = MeasureSpec.makeMeasureSpec(
                 Integer.MAX_VALUE >> 2, MeasureSpec.AT_MOST);
         super.onMeasure(widthMeasureSpec, expandSpec);
+    }
+
+    @Override
+    protected void onLayout(boolean changed, int l, int t, int r, int b) {
+        isOnMeasure = false;
+        super.onLayout(changed, l, t, r, b);
     }
 }
