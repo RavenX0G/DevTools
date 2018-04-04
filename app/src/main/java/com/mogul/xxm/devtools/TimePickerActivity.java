@@ -83,6 +83,8 @@ public class TimePickerActivity extends AppCompatActivity implements OnDateSetLi
             case R.id.button_16:
                 showTimerPick();
                 break;
+            case R.id.button_17:
+                break;
 
         }
     }

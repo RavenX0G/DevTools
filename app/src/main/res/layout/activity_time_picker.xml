@@ -22,6 +22,15 @@
                 android:layout_height="wrap_content"
                 android:text="TimerPick1"/>
 
+
+            <Button
+                android:id="@+id/button_17"
+                android:onClick="onClick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TimerPick Area"/>
+
+
         </LinearLayout>
     </ScrollView>
 
